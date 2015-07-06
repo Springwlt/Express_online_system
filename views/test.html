@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>考试题</title>
+        <script src="./lodash.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="./Style.css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+        <form class="" action="score" method="post" id="form">
+                <div class="location">
+                    <div class="header" >西安软件服务外包学院</div>
+                    <hr>
+                    <div id = "title"><div id="word">统一建模语言理论测试</div></div>
+                    <div class="information">
+                        <ul>
+                            <li>考试科目： <input type="text" name="subject"  class="text" value="统一建模语言UML" size="14"></li>
+                            <li>时间：<input type="text" id="time" name="time"  class="text" value="100分钟 " size="14"></li>
+                            <li>得分:<input type="text" id="score" name="score" class="text" value=" " size="14"></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="information">
+                        <ul>
+                            <li>班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级：<input type="text" value="" id="clas" name="clas" class="text"  size="14"></li>
+                            <li>学号：<input type="text" value="" id="studentId" name="studentId"  class="text" size="14"></li>
+                            <li>姓名:<input type="text" name="name"  id="name" value=""  class="text" size="14"></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="topic">一.填空题。</div>
+                    <br>
+                    <div>1.UML的中文全称是：<input type="text" value="" class="text" name="GapFilling_one" size="12"></div>
+                    <div>1.对象最突出的特征是：<input type="text" value="" class="text" name="GapFilling_two"  size="20"></div>
+                    <br>
+                    <div class="topic">二.选择题。</div>
+                    <br>
+                    <div>
+                        1.UML与软件工程的关系是：<br>
+                        <input type="radio" name="SingleSelection_one" value="A" class="option-input">(A) UML就是软件工程<br>
+                        <input type="radio" name="SingleSelection_one" value="B" class="option-input">(B) UML参与到软件工程中软件开发的几个阶段<br>
+                        <input type="radio" name="SingleSelection_one" value="C" class="option-input">(C) UML与软件工程无关<br>
+                        <input type="radio" name="SingleSelection_one" value="D" class="option-input">(D) UML是软件工程的一部分<br>
+                    </div>
+                    <br>
+                    <div>
+                        2.java语言支持：<br>
+                        <input type="radio" name="SingleSelection_two" value="A" class="option-input">(A) 单继承<br>
+                        <input type="radio" name="SingleSelection_two" value="B" class="option-input">(B) 多继承<br>
+                        <input type="radio" name="SingleSelection_two" value="C" class="option-input">(C) 单继承与多继承都支持<br>
+                        <input type="radio" name="SingleSelection_two" value="D" class="option-input">(D) 单继承和多继承都不支持<br>
+                    </div>
+                        <br>
+                        <div class="topic">三.多选题。</div>
+                        <br>
+                        <div>
+                            1.用户的粒度分为以下那三种：<br>
+                            <input type="checkbox" name="MultiSelect_one" value="A" class="option-input">(A) 概述级<br>
+                            <input type="checkbox" name="MultiSelect_one" value="B" class="option-input">(B) 需求级<br>
+                            <input type="checkbox" name="MultiSelect_one" value="C" class="option-input">(C) 用户目标集<br>
+                            <input type="checkbox" name="MultiSelect_one" value="D" class="option-input">(D) 子功能级<br>
+                        </div>
+                        <br>
+                        <div>
+                            2.类图由以下那三部分组成：<br>
+                            <input type="checkbox" name="MultiSelect_two" value="A" class="option-input">(A) 名称（Name）<br>
+                            <input type="checkbox" name="MultiSelect_two" value="B" class="option-input">(B) 属性（Attribute）<br>
+                            <input type="checkbox" name="MultiSelect_two" value="C" class="option-input">(C) 操作（Operation）<br>
+                            <input type="checkbox" name="MultiSelect_two" value="D" class="option-input">(D) 方法（Function）<br>
+                        </div>
+                        <div class="topic">四 .判断题</div>
+                        <br>
+                        <div>1.用例图只是用于和客户交流和沟通的，用于确定需求。
+                            <input  type="radio" name ="judge_one" value="true"/>√<input  type="radio" name="judge_one" value="false"/>X
+                        </div>
+                        <div>2.在状态图中，终止状态在一个状态图中允许有任意多个。
+                            <input  type="radio" name="judge_two" value="true"/>√<input  type="radio" name="judge_two" value="false"/>X
+                        </div>
+                        <br>
+                        <div class="topic">五 .简答题。</div>
+                        <br>
+                        <div>1.简述什么是模型以及模型的表现形式。
+                        </div>
+                            <textarea  name="ShortAnswerQuestion"></textarea>
+                            <br><br>
+                            <div><input type="submit"  id ="commit" value="提交" /> </div>
+                </div>
+            </form>
+            <script src="./main.js" charset="utf-8"></script>
+            <script src="./ExamAnswer.js" charset="utf-8"></script>
+            <script src="./Answer.js" charset="utf-8"></script>
+            <script src="./AnsewerLibrary.js" charset="utf-8"></script>
+            <script src="./Hint.js" charset="utf-8"></script>
+    </body>
+</html>

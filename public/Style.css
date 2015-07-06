@@ -1,0 +1,77 @@
+body{
+    font-size: 18px;
+    background: #e8ebee;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ul{
+    list-style-type: none;
+    font-size: 18px;font-size: 18px;
+}
+ul li{
+    float: left;
+    margin-left: 212px;
+    font-size: 18px;
+}
+hr{
+    width: 1000px;
+    margin-left: -59px;
+}
+form{
+    margin-left: -59px;
+    font-size: 18px;
+}
+textarea{
+    font-size:12px;
+    height: 200px;
+    width: 500px;
+}
+.text{
+      border-bottom:#666 1px solid;
+      border-left-width:0px;
+      border-right-width:0px;
+      border-top-width:0px;
+      height: 20px;
+}
+
+.header{
+    margin-left:-59px;
+}
+#title{
+    margin-left:-59px;
+    font-size: 50px;
+    background-color: rgba(215, 209, 209, 0.36);
+    height: 61px;
+    width: 1000px;
+}
+.location{
+    margin:  20px auto;
+    margin-left: 300px;
+}
+#word{
+margin-left: 226px;
+}
+.information{
+    margin-left: -304px;
+}
+.topic{
+    font-size: 25px;
+}
+.option-input {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #cbd1d8;
+    color: #fff;
+    margin-top:-3px;
+
+}
+.option-input:hover {
+    background: #9faab7;
+}
+.option-input:checked {
+    background: #40e0d0;
+}
+.option-input:checked::before {
+    width: 20px;
+    height: 20px;
+}
