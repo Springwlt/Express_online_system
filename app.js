@@ -16,8 +16,8 @@ app.get('/', function (req, res) {
 
 app.post('/score',function(req,res) {
     var score = getScore(req.body);
-    res.send("考试成绩为:"+score); 
-
+    res.send(""+score);
+});
 var server = app.listen(3000, function () {
 
   var host = server.address().address;
