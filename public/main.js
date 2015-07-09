@@ -1,4 +1,4 @@
-document.getElementById("commit").addEventListener("click",function(evt){
+$("#commit").on("click",function(evt){
     if(Hint()) {
         var examAnswer = new  ExamAnswer();
         var  examsAnswer = examAnswer.getExamAnswer(document.getElementById("form"));
@@ -8,6 +8,9 @@ document.getElementById("commit").addEventListener("click",function(evt){
     }else{
         evt.preventDefault();
     }
+    $.post("/score",$("#form").serialize(),function(score){
+        $("#score").prop("value",score);
+    });
 });
 var getScore = function(ansewerLibrary,examsAnswer) {
     var score = 0;

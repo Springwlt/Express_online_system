@@ -1,3 +1,4 @@
+var getScore = require("./score.js")
 var express = require('express');
 var app = express();
 var ejs = require('ejs');
@@ -14,14 +15,8 @@ app.get('/', function (req, res) {
 })
 
 app.post('/score',function(req,res) {
-    res.render('score',{
-        subject: req.body.subject,
-        score:req.body.score,
-        clas:req.body.clas,
-        studentId:req.body.studentId,
-        name:req.body.name
-    });
-})
+    var score = getScore(req.body);
+    res.send("考试成绩为:"+score); 
 
 var server = app.listen(3000, function () {
 

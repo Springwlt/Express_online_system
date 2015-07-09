@@ -13,3 +13,4 @@ function Hint() {
     }
     return true;
 }
+module.exports = Hint;
